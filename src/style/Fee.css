@@ -1,0 +1,36 @@
+/* FeePage.css */
+
+.fee-page {
+    padding: 40px;
+    text-align: center;
+}
+
+.fee-page h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.fee-table {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.fee-table th,
+.fee-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.fee-table th {
+    background-color: #3498db;
+    color: white;
+}
+
+.fee-page .pay-button {
+    margin-top: 20px;
+    padding: 15px 30px;
+}

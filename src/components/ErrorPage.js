@@ -1,14 +1,15 @@
-import React from "react";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import '../style/ErrorPage.css';
 
-
-
-function Errorpage(){
+const ErrorPage = () => {
     return (
-        <div>
-            <h1>Error Page</h1>
-            <p>An error has occurred. Please try again later.</p>
+        <div className="error-page">
+            <h1>Oops! Page Not Found</h1>
+            <p>It seems you've hit a broken link or the page has moved.</p>
+            <Link to="/">Go Back Home</Link>
         </div>
-    )
-}
+    );
+};
 
-export default Errorpage;
+export default ErrorPage;

@@ -1,0 +1,22 @@
+/* PlaygroundPage.css */
+
+.playground-page {
+    padding: 40px;
+}
+
+.playground-page h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.playground-page p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.playground-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px 0;
+}

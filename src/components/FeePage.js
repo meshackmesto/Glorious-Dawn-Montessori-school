@@ -1,12 +1,38 @@
-import React from "react";
+import React from 'react';
+import '../style/Fee.css';
 
-function FeePage(){
+const FeePage = () => {
     return (
-        <div>
-            <h1>Fees</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, justo ut ultricies sagittis, felis velit bibendum turpis, id venenatis dolor neque eu massa. Sed et consequat ligula. Nulla facilisi. Donec id ultricies ligula, vel rutrum diam. Curabitur at justo et velit faucibus dignissim.</p>
+        <div className="fee-page">
+            <h1>Fee Structure</h1>
+            <table className="fee-table">
+                <thead>
+                    <tr>
+                        <th>Grade</th>
+                        <th>Term 1</th>
+                        <th>Term 2</th>
+                        <th>Term 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Grade 1</td>
+                        <td>$1000</td>
+                        <td>$900</td>
+                        <td>$900</td>
+                    </tr>
+                    <tr>
+                        <td>Grade 2</td>
+                        <td>$1100</td>
+                        <td>$1000</td>
+                        <td>$1000</td>
+                    </tr>
+                    {/* Add more rows as needed */}
+                </tbody>
+            </table>
+            <button className="pay-button">Pay Now</button>
         </div>
-    )
-}
+    );
+};
 
 export default FeePage;

@@ -1,0 +1,41 @@
+/* EnquirePage.css */
+
+.enquire-page {
+    padding: 40px;
+    background-color: #f5f5f5;
+}
+
+.enquire-page h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.enquire-page form {
+    max-width: 600px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.enquire-page label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.enquire-page input,
+.enquire-page textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.enquire-page button {
+    width: 100%;
+}
