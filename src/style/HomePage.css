@@ -1,0 +1,32 @@
+/* HomePage.css */
+
+.homepage {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.homepage-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.homepage-content p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.homepage-button {
+    background-color: #e74c3c;
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.homepage-button:hover {
+    background-color: #c0392b;
+}

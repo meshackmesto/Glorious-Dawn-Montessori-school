@@ -1,16 +1,29 @@
-import React from "react";
+import React from 'react';
+import '../style/AdmissionsPage.css';
 
-
-
-function AdmissionsPage(){
+const AdmissionsPage = () => {
     return (
-        <div>
+        <div className="admissions-page">
             <h1>Admissions</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, justo ut ultricies sagittis, felis velit bibendum turpis, id venenatis dolor neque eu massa. Sed et consequat ligula. Nulla facilisi. Donec id ultricies ligula, vel rutrum diam. Curabitur at justo et velit faucibus dignissim.</p>
+            <p>We welcome new students to join our school community. Please fill out the application form and submit the necessary documents.</p>
+            <form>
+                <label>Student Name</label>
+                <input type="text" name="studentName" required />
+
+                <label>Date of Birth</label>
+                <input type="date" name="dob" required />
+
+                <label>Grade Applying For</label>
+                <select name="grade" required>
+                    <option value="Grade 1">Grade 1</option>
+                    <option value="Grade 2">Grade 2</option>
+                    {/* Add more grades as needed */}
+                </select>
+
+                <button type="submit">Submit Application</button>
+            </form>
         </div>
-    )
-}
-
-
+    );
+};
 
 export default AdmissionsPage;

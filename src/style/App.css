@@ -1,0 +1,108 @@
+/* global.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+a:hover {
+    color: #2980b9;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+button {
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+
+    .navbar-dropdown {
+        position: static;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-dropdown a {
+        padding: 10px;
+        border-top: 1px solid #34495e;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .homepage-content h1 {
+        font-size: 32px;
+    }
+
+    .homepage-content p {
+        font-size: 18px;
+    }
+
+    .music-page h1,
+    .about-page h1,
+    .contact-page h1,
+    .enquire-page h1,
+    .fee-page h1,
+    .admissions-page h1,
+    .timetable-page h1,
+    .playground-page h1,
+    .error-page h1 {
+        font-size: 28px;
+    }
+
+    .music-page p,
+    .about-page p,
+    .contact-page p,
+    .enquire-page p,
+    .fee-page p,
+    .admissions-page p,
+    .timetable-page p,
+    .playground-page p,
+    .error-page p {
+        font-size: 16px;
+    }
+}
