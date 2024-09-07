@@ -6,7 +6,6 @@
     padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
 .navbar-brand {
     display: flex;
     align-items: center;
@@ -34,13 +33,14 @@
     border: none;
     font-size: 24px;
     cursor: pointer;
+    color: #333;
 }
 
 .navbar-dropdown {
     position: absolute;
     top: 60px;
     right: 20px;
-    background-color: #fff;
+    background-color: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 10px;
     border-radius: 4px;
@@ -50,7 +50,7 @@
 .navbar-dropdown a {
     display: block;
     margin-bottom: 10px;
-    color: #333;
+    color: #6e2275;
     text-decoration: none;
 }
 
