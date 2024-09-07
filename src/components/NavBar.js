@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../style/NavBar.css';
 import logo from '../assests/logo.jpeg'; // Adjust the path to where your logo is stored
+import HomePage from './HomePage';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +14,7 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <div className="navbar-brand">
-                <img src={logo} alt="School Logo" className="navbar-logo" />
+                <img  src={logo} alt="School Logo"  onClick={HomePage} className="navbar-logo" />
             </div>
             <div className="navbar-links">
                 <Link to="/">Home</Link>
@@ -29,7 +30,6 @@ const Navbar = () => {
                     <Link to="/enquire">Enquire</Link>
                     <Link to="/fee">Fees</Link>
                     <Link to="/admissions">Admissions</Link>
-                    <Link to="/timetable">Timetable</Link>
                     <Link to="/playground">Playground</Link>
                 </div>
             )}
