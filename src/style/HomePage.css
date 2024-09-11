@@ -10,7 +10,7 @@ body, html {
 
 /* Full-width Hero Section */
 .hero-section {
-    background-image: url('/home/meshack/Jobs/school website/Glorious-Dawn-Montessori-school/src/assests/9A1A9682.jpg');
+    background-image: url('../assests/9A1A9682.jpg'); 
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -21,6 +21,7 @@ body, html {
     text-align: center;
     position: relative;
 }
+
 
 .hero-section::before {
     content: "";
