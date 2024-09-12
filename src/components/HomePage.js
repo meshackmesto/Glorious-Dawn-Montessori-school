@@ -41,6 +41,12 @@ const HomePage = () => {
                 <p>Our school offers a wide range of facilities, from a spacious library to a state-of-the-art playground.</p>
                 <Link to="/Playground" className="cta-button">View Facilities</Link>
             </div>
+            <footer>
+                <p>&copy; 2022 Montessori School. All rights reserved.</p>
+                <Link to="/privacy">Privacy Policy</Link>
+                <Link to="/terms">Terms of Service</Link>
+                <Link to="/contact">Contact Us</Link>
+            </footer>
         </div>
     );
 };

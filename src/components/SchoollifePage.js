@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../style/Schoollife.css';
 
 const SchoolLifePage = () => {
@@ -63,6 +64,7 @@ const SchoolLifePage = () => {
             <img src="path-to-wellness1.jpg" alt="Counseling Services" />
             <h3>Counseling Services</h3>
             <p>Our counselors provide mental health support and personal development guidance.</p>
+            <Link to="/about" className="cta-button">Learn More</Link>
           </div>
           <div className="card">
             <img src="path-to-wellness2.jpg" alt="Physical Health" />

@@ -9,6 +9,7 @@ import FeePage from './components/FeePage';
 import AdmissionsPage from './components/AdmissionsPage';
 import PlaygroundPage from './components/PlaygroundPage';
 import ErrorPage from './components/ErrorPage';
+import SchoolLifePage from './components/SchoollifePage';
 import './style/App.css';
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
                 <Route path="/fee" element={<FeePage />} />
                 <Route path="/admissions" element={<AdmissionsPage />} />
                 <Route path="/playground" element={<PlaygroundPage />} />
+                <Route path="/schoollife" element={<SchoolLifePage />} />
                 <Route path="*" element={<ErrorPage />} />
             </Routes>
         </Router>
