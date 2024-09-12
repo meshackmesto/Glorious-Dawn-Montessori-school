@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../style/HomePage.css';
+import image from '../assests/logo.jpeg';
+
 
 const HomePage = () => {
     return (
@@ -41,12 +43,15 @@ const HomePage = () => {
                 <p>Our school offers a wide range of facilities, from a spacious library to a state-of-the-art playground.</p>
                 <Link to="/Playground" className="cta-button">View Facilities</Link>
             </div>
+            <div className='Footer-container'>
             <footer>
-                <p>&copy; 2022 Montessori School. All rights reserved.</p>
+                <img src={image} alt="School Logo" className='logo' />
+                <p className='copyright'>&copy; 2022 Montessori School. All rights reserved.</p>
                 <Link to="/privacy">Privacy Policy</Link>
                 <Link to="/terms">Terms of Service</Link>
                 <Link to="/contact">Contact Us</Link>
             </footer>
+            </div>
         </div>
     );
 };
