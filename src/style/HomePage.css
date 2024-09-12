@@ -102,3 +102,49 @@ h2 {
         font-size: 1em;
     }
 }
+/* Footer styling */
+.footer {
+    background-color: #6e2275; /* Light grey background */
+    padding: 20px; /* Space inside the footer */
+    text-align: center; /* Center the text */
+    border-top: 1px solid #ddd; /* Light border at the top */
+    font-family: 'Arial', sans-serif; /* Simple, clean font */
+}
+
+.footer p {
+    color: #333; /* Darker text color for contrast */
+    font-size: 14px; /* Smaller, subtle text size */
+    margin: 0; /* Remove default margin */
+}
+
+.footer-links {
+    margin-top: 10px; /* Space between text and links */
+}
+
+.footer-links a {
+    color: #0066cc; /* Blue link color, typical for schools */
+    margin: 0 10px; /* Space between links */
+    text-decoration: none; /* Remove underline */
+    font-size: 14px; /* Same font size as the paragraph */
+    transition: color 0.3s ease; /* Smooth hover transition */
+}
+
+.footer-links a:hover {
+    color: #003366; /* Darker blue on hover for better visibility */
+}
+
+.footer-links a:active {
+    color: #002244; /* Even darker when clicked */
+}
+
+@media (max-width: 768px) {
+    /* Ensure the footer is responsive */
+    .footer {
+        padding: 15px; /* Less padding on smaller screens */
+    }
+
+    .footer-links a {
+        display: block; /* Stack links vertically */
+        margin: 5px 0; /* Add space between vertically stacked links */
+    }
+}

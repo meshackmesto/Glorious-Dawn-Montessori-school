@@ -26,7 +26,6 @@ const Navbar = () => {
             </div>
             {isOpen && (
                 <div className="navbar-dropdown">
-                    <Link to="/music">Music</Link>
                     <Link to="/enquire">Enquire</Link>
                     <Link to="/fee">Fees</Link>
                     <Link to="/admissions">Admissions</Link>
