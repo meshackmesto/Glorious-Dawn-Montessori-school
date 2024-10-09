@@ -1,20 +1,38 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../style/NavBar.css';
 import logo from '../assests/logo.jpeg'; // Adjust the path to where your logo is stored
-import HomePage from './HomePage';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false); // State to track scroll position
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
 
+    // Function to handle scroll events
+    const handleScroll = () => {
+        const scrollY = window.scrollY;
+        if (scrollY > 50) {
+            setIsScrolled(true); // Set to true if scrolled down
+        } else {
+            setIsScrolled(false); // Set to false if back at the top
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll); // Add event listener on mount
+        return () => {
+            window.removeEventListener('scroll', handleScroll); // Cleanup on unmount
+        };
+    }, []);
+
     return (
-        <nav className="navbar">
+        <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
             <div className="navbar-brand">
-                <img  src={logo} alt="School Logo"  onClick={HomePage} className="navbar-logo" />
+               <Link to="/"> <img src={logo} alt="School Logo" className="navbar-logo" />
+               </Link>
             </div>
             <div className="navbar-links">
                 <Link to="/">Home</Link>

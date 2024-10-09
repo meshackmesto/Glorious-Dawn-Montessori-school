@@ -115,38 +115,55 @@ h2 {
     background-blend-mode: color #6e2275;
 
 }
+
 .footer {
     padding: 20px; /* Space inside the footer */
-    text-align: center; /* Center the text */
+    text-align: center; /* Center the content */
     border-top: 1px solid #6e2275; /* Light border at the top */
     font-family: 'Arial', sans-serif; /* Simple, clean font */
-    height: 100vw;
+    height: auto; /* Adjusted height */
+    background-color: #6e2275;
+    color: white;
+}
+.social-icon {
+  margin: 0 10px;
+  font-size: 24px;
+  color: #fff; /* Default color */
+  transition: color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #007bff; /* Change color on hover */
 }
 
 .footer p {
-    color:#fff; /* Darker text color for contrast */
+    color: #fff; /* White text for contrast */
     font-size: 14px; /* Smaller, subtle text size */
     margin: 0; /* Remove default margin */
 }
-
+.footer-divider {
+    border-top: 1px solid #fff; /* Line to separate */
+    margin: 20px 0; /* Space above and below the line */
+}
 .footer-links {
     margin-top: 10px; /* Space between text and links */
+    text-align: center; /* Center links */
 }
 
 .footer-links a {
-    color: #0066cc; /* Blue link color, typical for schools */
-    margin: 0 10px; /* Space between links */
+    color: #fff; /* White link color */
+    margin: 0 15px; /* Space between links */
     text-decoration: none; /* Remove underline */
     font-size: 14px; /* Same font size as the paragraph */
     transition: color 0.3s ease; /* Smooth hover transition */
 }
 
 .footer-links a:hover {
-    color: #003366; /* Darker blue on hover for better visibility */
+    color: #ff7f50; /* Coral color on hover for better visibility */
 }
 
 .footer-links a:active {
-    color: #002244; /* Even darker when clicked */
+    color: #e67e22; /* Even darker when clicked */
 }
 
 @media (max-width: 768px) {

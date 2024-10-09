@@ -5,7 +5,17 @@
     background-color: #fff;
     padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease; /* Add transition for smooth effect */
+    position: fixed; /* Make the navbar fixed */
+    top: 0; /* Position it at the top */
+    left: 0; /* Align it to the left */
+    right: 0; /* Align it to the right */
+    z-index: 1000; /* Ensure it stays above other elements */
 }
+
+/* Rest of your CSS remains the same */
+
+
 .navbar-brand {
     display: flex;
     align-items: center;
@@ -34,6 +44,67 @@
     font-size: 24px;
     cursor: pointer;
     color: #333;
+}
+
+.navbar-dropdown {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 4px;
+    z-index: 1000;
+}
+
+.navbar-dropdown a {
+    display: block;
+    margin-bottom: 10px;
+    color: #6e2275;
+    text-decoration: none;
+}
+
+.navbar-dropdown a:last-child {
+    margin-bottom: 0;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s; /* Add transition for smooth effect */
+}
+
+.navbar.scrolled {
+    background-color: #6e2275; /* Purple color */
+    color: white; /* Text color when scrolled */
+}
+
+.navbar-links a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s ease; /* Add transition for link color */
+}
+
+.navbar.scrolled .navbar-links a {
+    color: white; /* Change link color to white when scrolled */
+}
+
+.navbar-menu-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.navbar.scrolled .navbar-menu-button {
+    color: white; /* Change button color when scrolled */
 }
 
 .navbar-dropdown {

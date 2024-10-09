@@ -1,41 +1,67 @@
-/* AdmissionsPage.css */
-
-.admissions-page {
-    padding: 40px;
-    background-color: #f5f5f5;
+.admissions-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Allow the page to grow as needed */
 }
 
-.admissions-page h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    text-align: center;
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 20px;
 }
 
-.admissions-page form {
-    max-width: 600px;
-    margin: auto;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+.image-container img {
+  width: 100%;
+  height: auto;
+  max-width: 1000px; /* Ensure the image doesn't get too large */
+  max-height: 400px; /* Limit the height so it doesn't take too much space */
+  object-fit: cover; /* Make the image cover the container proportionally */
 }
 
-.admissions-page label {
-    font-size: 16px;
-    margin-bottom: 10px;
-    display: block;
+.admissions-form {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #fff;
+  overflow-y: auto;
 }
 
-.admissions-page input,
-.admissions-page select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 16px;
+.admissions-form h2,
+.admissions-form h3 {
+  margin-top: 10px;
 }
 
-.admissions-page button {
-    width: 100%;
+.admissions-form label {
+  margin: 10px 0 5px;
+}
+
+.admissions-form input,
+.admissions-form textarea,
+.admissions-form select {
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 100%;
+  border: 1px solid #ccc;
+  
+}
+
+.admissions-form div {
+  margin-bottom: 15px;
+}
+
+.admissions-form button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.admissions-form button:hover {
+  background-color: #45a049;
 }
