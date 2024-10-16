@@ -36,6 +36,7 @@ const Navbar = () => {
             </div>
             <div className="navbar-links">
                 <Link to="/">Home</Link>
+                <Link to="/schoollife">schoollife</Link>
                 <Link to="/about">About</Link>
                 <Link to="/contact">Contact</Link>
                 <button onClick={toggleMenu} className="navbar-menu-button">
